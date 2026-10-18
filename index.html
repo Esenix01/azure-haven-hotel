@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azure Haven | Luxury Hotel & Resort</title>
+
+    <meta
+      name="description"
+      content="Discover luxury rooms, exceptional hospitality and unforgettable experiences at Azure Haven."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header" id="home">
+      <nav class="navbar container">
+        <a href="#home" class="logo">
+          <span>AZURE</span>
+          <small>HAVEN</small>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#rooms">Suites & Rooms</a></li>
+          <li><a href="#experience">Experiences</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#facilites">Facilites</a></li>
+        </ul>
+
+        <a href="#booking" class="nav-button">Book Your Stay</a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <span class="eyebrow">THE ART OF LUXURY LIVING</span>
+
+          <h1>Where luxury<br />feels <em>like home.</em></h1>
+
+          <p>
+            Discover refined elegance, exceptional hospitality and moments that
+            stay with you long after you leave.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#experience" class="btn btn-outline">Discover Azure</a>
+            <a href="#rooms" class="btn btn-gold">
+              Explore Our Suites
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
+
+          <div class="rating">
+            <div class="stars" aria-label="Five stars">★★★★★</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-section" id="booking">
+        <form class="booking-bar" id="bookingForm">
+          <div class="date-inputs">
+            <div class="booking-field">
+              <label for="checkIn">CHECK IN</label>
+              <input type="date" id="checkIn" required />
+            </div>
+
+            <div class="booking-field">
+              <label for="checkOut">CHECK OUT</label>
+              <input type="date" id="checkOut" required />
+            </div>
+          </div>
+
+          <div class="booking-field">
+            <label for="guests">GUESTS</label>
+            <select id="guests">
+              <option value="1">1 Guest</option>
+              <option value="2" selected>2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5+ Guests</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-dark">
+            Check Availability
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </button>
+        </form>
+      </section>
+
+      <section class="section" id="rooms">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">YOUR PRIVATE SANCTUARY</span>
+            <h2>Stay in <em>extraordinary</em> comfort.</h2>
+            <p>Thoughtfully designed spaces for every kind of escape.</p>
+          </div>
+
+          <div class="rooms-grid">
+            <article class="room-card">
+              <div class="room-image">
+                <img
+                  src="img/img-1.jpg"
+                  alt="Elegant deluxe hotel bedroom"
+                  loading="lazy"
+                />
+                <span class="room-tag">MOST LOVED</span>
+              </div>
+              <div class="room-info">
+                <p class="room-meta">King bed · 42 m²</p>
+                <h3>Deluxe Serenity Room</h3>
+                <p>A peaceful retreat designed for pure relaxation.</p>
+                <div class="room-bottom">
+                  <span>From <strong>₦85,000</strong> / night</span>
+                  <a href="#booking" aria-label="Book Deluxe Serenity Room">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="room-card">
+              <div class="room-image">
+                <img
+                  src="img/room-04.jpg"
+                  alt="Spacious premium hotel suite"
+                  loading="lazy"
+                />
+                <span class="room-tag">PREMIUM</span>
+              </div>
+              <div class="room-info">
+                <p class="room-meta">King bed · 68 m²</p>
+                <h3>Executive Suite</h3>
+                <p>Generous space with sophisticated design.</p>
+                <div class="room-bottom">
+                  <span>From <strong>₦150,000</strong> / night</span>
+                  <a href="#booking" aria-label="Book Executive Suite">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="room-card">
+              <div class="room-image">
+                <img
+                  src="img/presidential-01.jpg"
+                  alt="Exclusive luxury hotel accommodation"
+                  loading="lazy"
+                />
+                <span class="room-tag">EXCLUSIVE</span>
+              </div>
+              <div class="room-info">
+                <p class="room-meta">King bed · 105 m²</p>
+                <h3>Presidential Suite</h3>
+                <p>An exceptional private escape for special occasions.</p>
+                <div class="room-bottom">
+                  <span>From <strong>₦280,000</strong> / night</span>
+                  <a href="#booking" aria-label="Book Presidential Suite">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience-section" id="experience">
+        <div class="experience-image">
+          <img src="img/hotel-lobby.jpg" alt="Luxury hotel lobby" />
+        </div>
+
+        <div class="experience-content">
+          <span class="eyebrow">BEYOND EXPECTATIONS</span>
+          <h2>Every detail.<br /><em>Considered.</em></h2>
+
+          <p>
+            From slow mornings to unforgettable evenings, every part of your
+            stay is designed around comfort, privacy and discovery.
+          </p>
+
+          <div class="amenities-grid">
+            <div class="amenity">
+              <ion-icon name="water-outline"></ion-icon>
+              <div>
+                <h3>Infinity Pool</h3>
+                <p>Unwind in style</p>
+              </div>
+            </div>
+
+            <div class="amenity">
+              <ion-icon name="restaurant-outline"></ion-icon>
+              <div>
+                <h3>Fine Dining</h3>
+                <p>Exceptional flavours</p>
+              </div>
+            </div>
+
+            <div class="amenity">
+              <ion-icon name="leaf-outline"></ion-icon>
+              <div>
+                <h3>Luxury Spa</h3>
+                <p>Rest and recharge</p>
+              </div>
+            </div>
+
+            <div class="amenity">
+              <ion-icon name="fitness-outline"></ion-icon>
+              <div>
+                <h3>Fitness Centre</h3>
+                <p>Wellness, your way</p>
+              </div>
+            </div>
+
+            <div class="amenity">
+              <ion-icon name="wifi-outline"></ion-icon>
+              <div>
+                <h3>High-Speed Wi-Fi</h3>
+                <p>Stay connected</p>
+              </div>
+            </div>
+
+            <div class="amenity">
+              <ion-icon name="car-outline"></ion-icon>
+              <div>
+                <h3>Private Parking</h3>
+                <p>Arrive with ease</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-dark">Explore Our Amenities</a>
+        </div>
+      </section>
+
+      <section class="facilities-section" id="facilities">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">MORE TO EXPERIENCE</span>
+            <h2>Discover our <em>facilities.</em></h2>
+            <p>Everything you need for an exceptional stay.</p>
+          </div>
+
+          <div class="facilities-grid">
+            <article class="facility-card">
+              <img
+                src="img/resturant-&-bar.jpg"
+                alt="Luxury hotel restaurant"
+              />
+              <div class="facility-info">
+                <h3>Restaurant & Bar</h3>
+                <p>Enjoy fine dining and unforgettable flavours.</p>
+              </div>
+            </article>
+
+            <article class="facility-card">
+              <img src="img/hotel-pool.jpg" alt="Hotel swimming pool" />
+              <div class="facility-info">
+                <h3>Swimming Pool</h3>
+                <p>Relax and unwind beside the water.</p>
+              </div>
+            </article>
+
+            <article class="facility-card">
+              <img src="img/hotel-spa.jpg" alt="Luxury hotel spa" />
+              <div class="facility-info">
+                <h3>Spa & Wellness</h3>
+                <p>Make time for rest and relaxation.</p>
+              </div>
+            </article>
+
+            <article class="facility-card">
+              <img src="img/gym (2).jpg" alt="Modern hotel fitness centre" />
+              <div class="facility-info">
+                <h3>Fitness Centre</h3>
+                <p>Stay active throughout your stay.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section section" id="about">
+        <div class="container about-layout">
+          <div>
+            <span class="eyebrow">THE AZURE HAVEN STORY</span>
+            <h2>Not just a destination.<br /><em>A feeling.</em></h2>
+          </div>
+
+          <div class="about-copy">
+            <p>
+              We believe true luxury lives in the details: a warm welcome,
+              thoughtfully designed spaces and service that feels effortless.
+              Azure Haven is a celebration of comfort, character and meaningful
+              moments.
+            </p>
+            <a href="#contact" class="text-link">Get to know us →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" id="contact">
+        <div class="container cta-content">
+          <span class="eyebrow">YOUR NEXT CHAPTER BEGINS HERE</span>
+          <h2>Make room for<br /><em>something exceptional.</em></h2>
+          <a href="#booking" class="btn btn-gold">Plan Your Stay</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span>AZURE</span>
+            <small>HAVEN</small>
+          </a>
+          <p>A more thoughtful kind of luxury.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="#home">Home</a>
+          <a href="#rooms">Rooms & Suites</a>
+          <a href="#experience">Experiences</a>
+          <a href="#about">Our Story</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Guest Services</h3>
+          <a href="#booking">Reservations</a>
+          <a href="#experience">Amenities</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Get in Touch</h3>
+          <a href="https://maps.google.com/?q=Victoria+Island,+Lagos"
+            >18 Oceanview Drive, Victoria Island, Lagos, Nigeria</a
+          >
+          <a href="+23480000000000">+2348000000000</a>
+          <a href="mailto:reservations@azurehaven.example.com"
+            >reservations@azurehaven.example.com</a
+          >
+        </div>
+      </div>
+
+      <div class="footer-bottom container">
+        <p>© 2026 Azure Haven Hotel. All rights reserved.</p>
+        <p>Designed for exceptional stays.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile navigation
+      const menuToggle = document.querySelector("#menuToggle");
+      const navLinks = document.querySelector("#navLinks");
+
+      menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+
+        const isOpen = navLinks.classList.contains("active");
+        menuToggle.setAttribute("aria-expanded", isOpen);
+        menuToggle.innerHTML = isOpen
+          ? '<ion-icon name="close-outline"></ion-icon>'
+          : '<ion-icon name="menu-outline"></ion-icon>';
+      });
+
+      // Close menu after selecting a link
+      document.querySelectorAll(".nav-links a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          navLinks.classList.remove("active");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.innerHTML = '<ion-icon name="menu-outline"></ion-icon>';
+        });
+      });
+
+      // Booking date validation
+      const checkIn = document.querySelector("#checkIn");
+      const checkOut = document.querySelector("#checkOut");
+
+      checkIn.min = new Date().toISOString().split("T")[0];
+
+      checkIn.addEventListener("change", function () {
+        checkOut.min = checkIn.value;
+
+        if (checkOut.value && checkOut.value <= checkIn.value) {
+          checkOut.value = "";
+        }
+      });
+
+      document
+        .querySelector("#bookingForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          if (checkOut.value <= checkIn.value) {
+            alert("Check-out must be after check-in.");
+            return;
+          }
+
+          alert(
+            "Booking form demo: connect a real reservation system to check availability.",
+          );
+        });
+    </script>
+  </body>
+</html>
